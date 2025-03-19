@@ -4,7 +4,7 @@ import json
 import os
 app = Flask(__name__)
 CORS(app)
-data_file_path = os.path.join(os.path.dirname(__file__), '../store/data.json')
+data_file_path = os.path.join(os.path.dirname(__file__), './store/data.json')
 
 with open(data_file_path) as f:
     properties = json.load(f)
